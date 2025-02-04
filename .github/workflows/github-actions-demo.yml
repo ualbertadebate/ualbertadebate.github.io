@@ -8,6 +8,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: date | awk '{print $4}' >> dates.txt
+      - run: touch testing2
       - run: echo done
