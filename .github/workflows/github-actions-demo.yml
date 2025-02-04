@@ -10,4 +10,6 @@ jobs:
           ls ${{ github.workspace }}
       - run: date | awk '{print $4}' >> dates.txt
       - run: touch testing2
+      - run: pwd
+      - run: ls -A
       - run: echo done
