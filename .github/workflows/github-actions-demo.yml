@@ -5,14 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
+      - run: ls -A
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: pwd
-      - run: echo ${{ github.workspace }}
-      - name: List files in the repository
-        run: |
-          ls -a ${{ github.workspace }}
-      - run: ls -a
-      - run: touch ${{ github.workspace }}/testing2.txt
+      - run: ls -A
       - run: echo done
