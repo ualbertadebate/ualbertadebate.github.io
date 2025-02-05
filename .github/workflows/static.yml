@@ -1,6 +1,4 @@
 {
-	name: "Deploy static content to Pages",
-
 	# Trigger on push and on manual runs from Actions tab
 	on: ["push", "workflow_dispatch"],
 
