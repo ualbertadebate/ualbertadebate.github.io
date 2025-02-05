@@ -1,5 +1,4 @@
-name: explore
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   explore:
     runs-on: ubuntu-latest
