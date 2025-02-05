@@ -1,0 +1,8 @@
+https://ualbertadebate.wixsite.com/uads
+https://ualbertadebate.wixsite.com/uads/about
+https://ualbertadebate.wixsite.com/uads/products
+https://web.archive.org/web/*/https://ualbertadebate.wixsite.com/*
+https://web.archive.org/web/20210504000000*/https://sites.ualberta.ca/~debate/ # no other paths in wayback or archive.is
+https://ualbertadebate.ca/
+https://facebook.com/UAlbertaDebate/
+https://web.archive.org/web/20110718112225/http://uofadebate.wordpress.com/

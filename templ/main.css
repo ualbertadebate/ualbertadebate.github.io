@@ -1,0 +1,70 @@
+/**** RESET ****/
+/* Reset default browser styles */
+* {
+	background: initial;
+	border: initial;
+	box-sizing: border-box;
+	font: inherit;
+	margin: initial;
+	padding: initial
+}
+/* Set page to full height */
+html, body {
+	height: 100%;
+}
+
+/**** MAIN ****/
+body {
+	font-family: "Source Sans 3";
+}
+
+/**** TOP NAV ****/
+#header {
+	background: #041;
+	font-size: 22px;
+	overflow-y: auto;
+	padding: 10px 30px;
+}
+#header :is(a, details) {
+	color: #FE5;
+	font-weight: 300;
+	text-decoration: none;
+}
+#header a:hover {
+	text-decoration: underline;
+}
+#header-nav {
+	float: right;
+}
+#header-nav > li {
+	float: left;
+	list-style: none;
+	margin: 10px;
+}
+/* This causes absolute ul to trigger overflow of #header */
+/*
+#header-nav details {
+	position: relative;
+}
+*/
+#header-nav details > ul {
+	background: #030D;
+	list-style: none;
+	margin-left: 20px;
+	padding: 5px 10px;
+	position: absolute;
+}
+#header-nav details > ul > li {
+	margin: 5px;
+}
+summary:focus {
+	background: yellow !important;
+}
+/*
+@media (max-width: 1250px) {
+	#header-logo {
+		display: none;
+	}
+}
+*/
+

@@ -1,0 +1,13 @@
+- understand workflow actions
+	- <https://docs.github.com/en/actions/guides#create-an-action>
+	- <https://github.com/actions/configure-pages>
+	- <https://github.com/actions/upload-pages-artifact>
+		- this is simply <https://github.com/actions/upload-pages-artifact/blob/main/action.yml>
+			- TODO: repl w smt simpler
+			- <https://github.com/actions/upload-artifact>
+			- <https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/storing-and-sharing-data-from-a-workflow>
+	- <https://github.com/actions/deploy-pages>
+	- improve build times
+- dl fonts so no import from goog
+- ua host site <https://ualberta.ca/en/computing-science/resources/technical-support/your-web-presence/setting-up-your-web-space.html>
+	- this doesnt work <https://sites.ualberta.ca/~szepesva/makewebpage.html>
