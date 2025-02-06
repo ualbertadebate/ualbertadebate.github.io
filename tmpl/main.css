@@ -50,6 +50,9 @@ body {
 	position: relative;
 }
 */
+#header-nav summary {
+	cursor: default;
+}
 #header-nav details > ul {
 	background: #030D;
 	list-style: none;
