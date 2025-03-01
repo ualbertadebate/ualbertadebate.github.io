@@ -13,14 +13,17 @@
 	jobs: {
 		build: {
 			runs-on: "ubuntu-latest",
+			defaults: {run: {shell: "sh"}},
 			steps: [
 				{uses: "actions/checkout@v4"},
 				{uses: "actions/configure-pages@v5"},
+				{run: "find content | sed 's@.*/@@' | grep -v '[0-9a-z_][0-9a-z_.-]*' && (>&2 printf 'invalid files names found!'; exit 1)"},
+				{run: "find content/ -type f -name \\*.html -exec sh -c 'for html do md=${html%.html}.md; ! [ -f $md ] || find $md tmpl.html -newer $html | grep -q . && (>&2 printf 'rm %s\n' $html; rm $html); done' _ {} +"},
 				{
 					uses: "docker://pandoc/core:3.5",
 					with: {
 						entrypoint: "/usr/bin/find",
-						args: "content/ -type f -name *.md -exec sh -c \"for md do html=${md%.md}.html; if ! [ -f $html ]; then >&2 printf 'building %s...\\n' $html; pandoc --template=tmpl.html --output=$html -- $md || >&2 printf 'pandoc failed to build %s!\\n' $html; fi; done\" _ {} +",
+						args: "content/ -type f -name *.md -exec sh -c \"for md do html=${md%.md}.html; [ -f $html ] || (>&2 printf 'building %s...\\n' $html; pandoc --template=tmpl.html --email-obfuscation=references --wrap=preserve --output=$html $md || >&2 printf 'pandoc failed to build %s!\\n' $html); done\" _ {} +",
 					},
 				},
 				{
