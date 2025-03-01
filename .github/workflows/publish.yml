@@ -20,7 +20,7 @@
 					uses: "docker://pandoc/core:3.5",
 					with: {
 						entrypoint: "/bin/sh",
-						args: "/usr/local/bin/pandoc --template=tmpl.html content/index.html -o content/index.html content/index.md",
+						args: "/usr/local/bin/pandoc --template=tmpl.html -o content/index.html content/index.md",
 					},
 				},
 				{
