@@ -1,12 +1,13 @@
 {
-	# Trigger on push and on manual runs from Actions tab
+	# trigger on push and on manual runs from Actions tab
 	on: ["push", "workflow_dispatch"],
 
-	# These permissions allow deployment to GitHub Pages
+	# allow deployment to GitHub Pages
 	permissions: {contents: "read", pages: "write", id-token: "write"},
 
-	# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-	# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+	# allow only one concurrent deployment,
+	# skipping runs queued between the run in-progress and latest queued
+	# but do not cancel in-progress runs
 	concurrency: {group: "pages", cancel-in-progress: false},
 
 	jobs: {
@@ -15,8 +16,8 @@
 			steps: [
 				{uses: "actions/checkout@v4"},
 				{uses: "actions/configure-pages@v5"},
-				{run: "mkdir -p output/; find . > output/placeholder.txt"},
-				{uses: "actions/upload-pages-artifact@v3", with: {path: "output/"}},
+				{shell: "sh", run: "find content/ -name '*.md' -exec sh -c 'for md do html=${md%.md}.html; ! [ -f \"$html\" ] || find -- \"$md\" tmpl.html -newer \"$html\" | grep -q . && (pandoc --template=tmpl.html --output=\"$html\" -- \"$md\" || >&2 printf %s\\\\n \"pandoc failed to build \\\"$html\\\"!\"); done' _ {} +"},
+				{uses: "actions/upload-pages-artifact@v3", with: {path: "content/"}},
 			],
 		},
 		deploy: {
