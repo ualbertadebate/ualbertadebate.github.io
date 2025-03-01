@@ -19,8 +19,8 @@
 				{
 					uses: "docker://pandoc/core:3.5",
 					with: {
-						entrypoint: "/bin/sh",
-						args: "sh -c 'cat content/index.md'",
+						entrypoint: "ls",
+						args: "/",
 					},
 				},
 				{
