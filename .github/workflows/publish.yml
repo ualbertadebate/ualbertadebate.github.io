@@ -19,8 +19,8 @@
 				{
 					uses: "docker://pandoc/core:3.5",
 					with: {
-						entrypoint: "/bin/sh",
-						args: "-c 'printf %s\\\\n hello world'",
+						entrypoint: "/usr/bin/find",
+						args: "content/ -type f -name *.md -exec sh -c \"for md do html=${md%.md}.html; if ! [ -f $html ]; then >&2 printf 'building %s...\\n' $html; pandoc --template=tmpl.html --output=$html -- $md || >&2 printf 'pandoc failed to build %s!\\n' $html; fi; done\" _ {} +",
 					},
 				},
 				{
