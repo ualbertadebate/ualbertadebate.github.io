@@ -17,7 +17,7 @@
 				{uses: "actions/checkout@v4"},
 				{uses: "actions/configure-pages@v5"},
 				{
-					uses: "docker://pandoc/minimal:3.5",
+					uses: "docker://pandoc/core:3.5",
 					with: {
 						entrypoint: "/bin/sh",
 						args: "sh -c 'cat content/index.md'",
