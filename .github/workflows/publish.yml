@@ -20,7 +20,7 @@
 					uses: "docker://pandoc/core:3.5",
 					with: {
 						entrypoint: "/bin/sh",
-						args: "-c printf %s\\\\n my name is\\ ozymandias",
+						args: "-c printf\\ %s\\\\n\\ my\\ name",
 					},
 				},
 				{
