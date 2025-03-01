@@ -19,8 +19,8 @@
 				{
 					uses: "docker://pandoc/core:3.5",
 					with: {
-						entrypoint: "/usr/bin/find",
-						args: "content/ -type f -name *.md",
+						entrypoint: "/bin/sh",
+						args: "-c \"printf %s\\\\n 'hello world'\"",
 					},
 				},
 				{
