@@ -19,7 +19,7 @@
 				{
 					uses: "docker://pandoc/core:3.5",
 					with: {
-						entrypoint: "/usr/bin/sh",
+						entrypoint: "/bin/sh",
 						args: "-c echo \"$PATH\"",
 					},
 				},
