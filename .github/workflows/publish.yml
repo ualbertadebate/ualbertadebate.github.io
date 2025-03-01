@@ -19,8 +19,8 @@
 				{
 					uses: "docker://pandoc/minimal:3.5",
 					with: {
-						entrypoint: ["sh", "-c"],
-						args: ["find content/ -name '*.md' -exec sh -c 'for md do html=${md%.md}.html; ! [ -f \"$html\" ] || find -- \"$md\" tmpl.html -newer \"$html\" | grep -q . && (pandoc --template=tmpl.html --output=\"$html\" -- \"$md\" || >&2 printf %s\\\\n \"pandoc failed to build \\\"$html\\\"!\"); done' _ {} +"],
+						entrypoint: "sh -c",
+						args: "find content/ -name '*.md' -exec sh -c 'for md do html=${md%.md}.html; ! [ -f \"$html\" ] || find -- \"$md\" tmpl.html -newer \"$html\" | grep -q . && (pandoc --template=tmpl.html --output=\"$html\" -- \"$md\" || >&2 printf %s\\\\n \"pandoc failed to build \\\"$html\\\"!\"); done' _ {} +",
 					},
 				},
 				{
