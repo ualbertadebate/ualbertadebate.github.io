@@ -20,7 +20,7 @@
 					uses: "docker://pandoc/core:3.5",
 					with: {
 						entrypoint: "ls",
-						args: "/",
+						args: "/bin",
 					},
 				},
 				{
