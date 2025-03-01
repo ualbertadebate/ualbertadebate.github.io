@@ -19,8 +19,8 @@
 				{
 					uses: "docker://pandoc/core:3.5",
 					with: {
-						entrypoint: "/bin/sh",
-						args: "-c echo \"$PATH\"",
+						entrypoint: "/usr/bin/find",
+						args: "content/ -name '*.md'",
 					},
 				},
 				{
