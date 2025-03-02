@@ -1,3 +1,6 @@
+- also gen top and bottom navs from md
+- clean up markdown output
+	- only group h2 into section tags
 - understand workflow actions
 	- <https://docs.github.com/en/actions/guides#create-an-action>
 	- <https://github.com/actions/configure-pages>
