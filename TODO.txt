@@ -9,5 +9,8 @@
 	- <https://github.com/actions/deploy-pages>
 	- improve build times
 - dl fonts so no import from goog
+- pandoc indent HTML so source is also pretty
+	- why doesnt this work? <https://pandoc.org/MANUAL.html#nesting>
 - ua host site <https://ualberta.ca/en/computing-science/resources/technical-support/your-web-presence/setting-up-your-web-space.html>
 	- this doesnt work <https://sites.ualberta.ca/~szepesva/makewebpage.html>
+- build with makefile instead
