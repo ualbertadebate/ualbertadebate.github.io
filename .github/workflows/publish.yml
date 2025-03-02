@@ -17,9 +17,7 @@
 			steps: [
 				{uses: "actions/checkout@v4"},
 				{uses: "actions/configure-pages@v5"},
-				# runs `find content` instead of `find content/`
-				# bc that would be mistaken for an invalid file name
-				{run: "! find content | sed 's@.*/@@' | grep -v '[0-9a-z_][0-9a-z_.-]*' || (>&2 printf 'invalid files names found!\\n'; exit 1)"},
+				{run: "! find content/ | grep -Evx '(.*/)?[0-9a-z_][0-9a-z_.-]*/?' || (>&2 printf 'invalid files names found!\\n'; exit 1)"},
 				{run: "find content/ -type f -name \\*.html -exec sh -c 'for html do md=${html%.html}.md; ! [ -f $md ] || find $md tmpl.html -newer $html | grep -q . && (>&2 printf \"rm %s\\\\n\" $html; rm $html); done' _ {} +"},
 				{
 					uses: "docker://pandoc/core:3.5",
