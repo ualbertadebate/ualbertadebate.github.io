@@ -16,3 +16,6 @@
 - ua host site <https://ualberta.ca/en/computing-science/resources/technical-support/your-web-presence/setting-up-your-web-space.html>
 	- this doesnt work <https://sites.ualberta.ca/~szepesva/makewebpage.html>
 - build with makefile instead
+- improve gh workflow log & err
+- seo, metadata, keywd tags
+- pretty animations, js carousel
