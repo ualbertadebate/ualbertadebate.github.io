@@ -7,7 +7,9 @@
 			- <https://github.com/actions/upload-artifact>
 			- <https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/storing-and-sharing-data-from-a-workflow>
 	- <https://github.com/actions/deploy-pages>
-	- improve build times
+	- improve build perf/times
+		- all html seems to be regenerated each time,
+			ie `find ... -exec ... rm` script does nothing rn
 - dl fonts so no import from goog
 - pandoc indent HTML so source is also pretty
 	- why doesnt this work? <https://pandoc.org/MANUAL.html#nesting>

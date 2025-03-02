@@ -12,4 +12,4 @@ If you're looking to improve your speaking skills, or would like to make some ne
 
 Meetings for Fall/Winter are taking place in Education South Room 262 at 5:00 PM every Wednesday and Thursday.
 
-Drop-ins are welcome—no experience required!
+Drop-ins are welcome---no experience required!
