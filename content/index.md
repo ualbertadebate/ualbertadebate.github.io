@@ -2,7 +2,7 @@
 
 # Welcome to the oldest (and friendliest) club at the University of Alberta.
 
-![](/img/home.jpg)
+![](home.jpg)
 
 ## Try UADS!
 
