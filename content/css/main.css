@@ -35,11 +35,23 @@ h1 {
 }
 h2 {
 	font-size: 2rem;
-	margin-top: 20px;
 	margin-bottom: 10px;
+	margin-top: 20px;
+}
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 10px;
 }
 main {
 	margin: 50px 10%;
+}
+article p, article ol, article ul {
+	margin-block: 0.7em;
+}
+article ol, article ul {
+	padding-left: 1.5em;
 }
 
 /**** HEADER AND FOOTER ****/
