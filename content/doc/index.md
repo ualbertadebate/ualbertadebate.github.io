@@ -16,7 +16,7 @@ The opportunity to attend prestigious international debate tournaments is determ
 
 This form can be filled out by anyone who feels as though they have experienced or witnessed an equity violation. This form is anonymous, meaning your name and email will not be recorded.
 
-[Equity Violation Form](https://docs.google.com/forms/d/e/1FAIpQLScCZNF6bSHi2K39D35u7NrJuLNBT3TSauAHRukL_nYhFvaatQ)
+[Equity Violation Form](https://forms.gle/4pzPUcz23ssnR6qr7)
 
 ## 2023 WGM Survey Findings and Reminders
 
