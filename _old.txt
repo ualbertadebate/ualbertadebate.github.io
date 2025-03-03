@@ -2,7 +2,13 @@ https://ualbertadebate.wixsite.com/uads
 https://ualbertadebate.wixsite.com/uads/about
 https://ualbertadebate.wixsite.com/uads/products
 https://web.archive.org/web/*/https://ualbertadebate.wixsite.com/*
-https://web.archive.org/web/20210504000000*/https://sites.ualberta.ca/~debate/ # no other paths in wayback or archive.is
+https://web.archive.org/web/*/https://sites.ualberta.ca/~debate/ # no other paths in wayback or archive.is
+https://web.archive.org/web/*/https://www.ualberta.ca/~debate/*
 https://ualbertadebate.ca/
-https://facebook.com/UAlbertaDebate/
+https://facebook.com/UAlbertaDebate
+https://facebook.com/groups/UAlbertaDebate
+https://twitter.com/UAlbertaDebate
+https://youtube.com/@albertadebate
 https://web.archive.org/web/20110718112225/http://uofadebate.wordpress.com/
+see uads.ca subdomains
+https://ualberta.ca/~abnats # pointed to by nats.uads.ca
