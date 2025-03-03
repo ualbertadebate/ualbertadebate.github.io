@@ -5,6 +5,7 @@ https://web.archive.org/web/*/https://ualbertadebate.wixsite.com/*
 https://web.archive.org/web/*/https://sites.ualberta.ca/~debate/ # no other paths in wayback or archive.is
 https://web.archive.org/web/*/https://www.ualberta.ca/~debate/*
 https://ualbertadebate.ca/
+https://www.mailman.srv.ualberta.ca/mailman/listinfo/debate
 https://facebook.com/UAlbertaDebate
 https://facebook.com/groups/UAlbertaDebate
 https://twitter.com/UAlbertaDebate
