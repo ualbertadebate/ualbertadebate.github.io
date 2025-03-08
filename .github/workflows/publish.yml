@@ -23,7 +23,7 @@
 					uses: "docker://pandoc/core:3.5",
 					with: {
 						entrypoint: "find",
-						args: "content/ -type f -name *.md -exec sh -c \"for md do html=${md%.md}.html; [ -f $html ] || (>&2 printf 'building %s...\\n' $html; pandoc --template=tmpl.html --email-obfuscation=references --section-divs --wrap=preserve --output=$html $md || >&2 printf 'pandoc failed to build %s!\\n' $html); done\" _ {} +",
+						args: "content/ -type f -name *.md -exec sh -c \"for md do html=${md%.md}.html; [ -f $html ] || (>&2 printf 'building %s...\\n' $html; pandoc --template=tmpl.html --email-obfuscation=references --eol=lf --section-divs --wrap=preserve --output=$html $md || >&2 printf 'pandoc failed to build %s!\\n' $html); done\" _ {} +",
 					},
 				},
 				{
