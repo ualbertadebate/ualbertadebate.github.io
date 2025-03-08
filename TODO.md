@@ -1,3 +1,4 @@
+- better org: home, join, linktree...
 - change default pandoc html output
 	- lua filter/writer
 		- <https://stackoverflow.com/q/67604007>
@@ -41,6 +42,7 @@
 - understand workflow actions better
 	- <https://docs.github.com/en/actions/guides#create-an-action>
 	- <https://github.com/actions/configure-pages>
+		- do i need this? can i rm?
 	- <https://github.com/actions/upload-pages-artifact>
 		- this is simply <https://github.com/actions/upload-pages-artifact/blob/main/action.yml>
 			- <https://github.com/actions/upload-artifact>
