@@ -2,7 +2,7 @@
 
 ## Subscribe to our mailing list to stay updated!
 
-[Subscribe!](https://mailchi.mp/a3462940ecb0/website)
+[Subscribe!](https://docs.google.com/forms/d/e/1FAIpQLScuWrcCby4yJIDk6vjiThR9Nm6kklm3IQV8jNrR5KeHzh7kOQ/viewform)
 
 ## FAQs
 
