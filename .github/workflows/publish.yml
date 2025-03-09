@@ -15,16 +15,15 @@
 			runs-on: "ubuntu-latest",
 			defaults: {run: {shell: "sh"}},
 			steps: [
-				{uses: "actions/checkout@v4"},
-				{uses: "actions/configure-pages@v5"},
-				{run: "! find content/ | grep -Evx '(.*/)?[0-9a-z_][é0-9a-z_.-]*/?' || (>&2 printf 'invalid files names found!\\n'; exit 1)"},
-				{run: "find content/ -type f -name \\*.html -exec sh -c 'for html do md=${html%.html}.md; ! [ -f $md ] || find $md tmpl.html .github/workflows/publish.yml -newer $html | grep -q . && (>&2 printf \"rm %s\\\\n\" $html; rm $html); done' _ {} +"},
+				{
+					uses: "actions/checkout@v4",
+				},
+				{
+					uses: "actions/configure-pages@v5",
+				},
 				{
 					uses: "docker://pandoc/core:3.5",
-					with: {
-						entrypoint: "find",
-						args: "content/ -type f -name *.md -exec sh -c \"for md do html=${md%.md}.html; [ -f $html ] || (>&2 printf 'building %s...\\n' $html; pandoc --template=tmpl.html --email-obfuscation=references --eol=lf --section-divs --wrap=preserve --output=$html $md || >&2 printf 'pandoc failed to build %s!\\n' $html); done\" _ {} +",
-					},
+					with: {entrypoint: "sh", args: "build/build.sh"},
 				},
 				{
 					uses: "actions/upload-pages-artifact@v3",
@@ -40,7 +39,9 @@
 			runs-on: "ubuntu-latest",
 			needs: "build",
 			steps: [
-				{uses: "actions/deploy-pages@v4"},
+				{
+					uses: "actions/deploy-pages@v4",
+				},
 			],
 		},
 	},
