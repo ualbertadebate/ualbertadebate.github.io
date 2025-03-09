@@ -54,47 +54,47 @@ article ol, article ul {
 	padding-left: 1.5em;
 }
 
-/**** HEADER AND FOOTER ****/
-#header, #footer {
+/**** SITE HEADER AND FOOTER ****/
+#site-header, #site-footer {
 	background: #041;
 	color: #eee;
 	font-size: 20px;
 	overflow-y: auto;
 	padding: 10px 30px;
 }
-#header-logo {
+#site-header-logo {
 	margin-right: 50px;
 }
-#header :is(a, details) {
+#site-header :is(a, details) {
 	color: #FE5;
 	font-weight: 300;
 	text-decoration: none;
 }
-#header a:hover {
+#site-header a:hover {
 	text-decoration: underline;
 }
-#header-nav {
+#site-header nav {
 	float: right;
 }
-#header-nav > li {
+#site-header nav > ul > li {
 	float: left;
 	list-style: none;
 	margin: 10px;
 }
-/* This causes absolute ul to trigger overflow of #header */
+/* This causes absolute ul to trigger overflow of #site-header */
 /*
-#header-nav details {
+#site-header nav details {
 	position: relative;
 }
 */
-#header-nav details > ul {
+#site-header nav > ul > li ul {
 	background: #030D;
 	list-style: none;
 	margin-left: 20px;
 	padding: 5px 10px;
 	position: absolute;
 }
-#header-nav details > ul > li {
+#site-header nav > ul > li li {
 	margin: 5px;
 }
 
