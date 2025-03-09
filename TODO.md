@@ -1,3 +1,4 @@
+- combine old cal
 - better org: home, join, linktree...
 - change default pandoc html output
 	- lua filter/writer
