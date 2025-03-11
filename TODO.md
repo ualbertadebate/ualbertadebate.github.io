@@ -3,8 +3,6 @@
 - change default pandoc html output
 	- lua filter/writer
 		- <https://stackoverflow.com/q/67604007>
-	- xpath, xquery?
-		- <https://developer.mozilla.org/en-US/docs/Web/XML/XPath/Guides/Introduction_to_using_XPath_in_JavaScript>
 	- <https://github.com/orf/html-query>
 	- <https://github.com/mgdm/htmlq>
 	- <https://github.com/sibprogrammer/xq>
@@ -52,3 +50,12 @@
 	- improve build perf/times
 		- all html seems to be regenerated each time,
 			ie `find ... -exec ... rm` script does nothing rn
+- perf
+	- [rel=preconnect](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect)
+	- [dns-prefect](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/dns-prefetch)
+	- [rel=preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload)
+	- [prefetch](https://developer.mozilla.org/en-US/docs/Glossary/Prefetch)
+	- [speculative loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Speculative_loading)
+	- spa?
+		- load on hover/active/focus?
+			- eg <https://gohugo.io/>
