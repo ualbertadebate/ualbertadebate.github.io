@@ -1,15 +1,20 @@
+- dl old site
+- plan how to mk site generalizable and easy to edit
+- pandoc filter
+	- exec page
+	- also gen top and bottom navs from md
 - combine old cal
 - better org: home, join, linktree...
-- change default pandoc html output
-	- lua filter/writer
-		- <https://stackoverflow.com/q/67604007>
-	- <https://github.com/orf/html-query>
-	- <https://github.com/mgdm/htmlq>
-	- <https://github.com/sibprogrammer/xq>
 - dont brk email, no www
 	- ask rachel how email works
 	- ask past vpi abt dns recs
 - css
+	- nav bars
+		- site-header position absolute
+		- site-header text
+		- site-footer stick to bottom
+		- full width site header/footer when overflow
+	- col
 	- refer to dtcc
 	- mobile
 		- <https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag>
@@ -20,7 +25,6 @@
 	- mk pretty
 		- <https://stackoverflow.com/q/34331102>
 - doc
-- also gen top and bottom navs from md
 - clean up markdown output
 	- heading id
 	- only group h2 into section
