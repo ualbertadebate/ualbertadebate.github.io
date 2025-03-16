@@ -10,7 +10,7 @@ main() {
 	rm_outdated
 	build
 }
-readonly PAT_VERIF_FNAME='(.*/)?[0-9a-z_][é0-9a-z_.-]*/?'
+readonly PAT_VERIF_FNAME='(.*/)?[0-9a-z_][0-9a-z_.-]*/?'
 verif_fnames() {
 	! find content/ | grep -Evx "$PAT_VERIF_FNAME" ||
 		fatal 'invalid file names found'
