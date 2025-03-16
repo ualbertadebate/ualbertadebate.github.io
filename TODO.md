@@ -1,13 +1,19 @@
-- dl old site
-- plan how to mk site generalizable and easy to edit
-- pandoc filter
-	- exec page
-	- also gen top and bottom navs from md
-- combine old cal
-- better org: home, join, linktree...
-- dont brk email, no www
-	- ask rachel how email works
+## todo now
+- dns
+	- find dns ttl
+	- ask rachel t test send & recv email
+	- redir www to @
 	- ask past vpi abt dns recs
+	- ask past vpi abt strange subdomains
+- dl old site
+	- note inline formatting
+	- note gen style
+	- cal evt
+- plan mk generalizable & easy to edit
+- pandoc filter
+	- exec, member page
+	- also gen top & bot navs from md
+- better org: home, join, linktree...
 - css
 	- nav bars
 		- site-header position absolute
@@ -24,11 +30,13 @@
 	- ask fariha abt logo
 	- mk pretty
 		- <https://stackoverflow.com/q/34331102>
+	- clean up md output: only grp h2 into section
 - doc
-- clean up markdown output
-	- heading id
-	- only group h2 into section
-- heading anchor links?
+
+## todo later
+- combine old cal
+- heading anchor link
+	- clean up md output: heading id
 - no goog font
 - pandoc indent html so source is also pretty
 	- why doesnt this work? <https://pandoc.org/MANUAL.html#nesting>
