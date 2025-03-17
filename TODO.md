@@ -9,6 +9,7 @@
 - better org: home, join, linktree...
 	- reg info, tourn info
 - css
+	- exec utf caret not disp when no font support, eg on ph
 	- nav bars
 		- site-header position absolute
 		- site-header text
