@@ -4,7 +4,7 @@
 
 The society is governed by its constitution.
 
-[UADS Constitution](constitution_2023-04.pdf)
+[UADS Constitution](constitution_2024-04.pdf)
 
 ## Points System
 
