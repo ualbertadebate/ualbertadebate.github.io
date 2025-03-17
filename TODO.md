@@ -1,19 +1,13 @@
 ## todo now
-- dns
-	- find dns ttl
-	- ask rachel t test send & recv email
-	- redir www to @
-	- ask past vpi abt dns recs
-	- ask past vpi abt strange subdomains
-- dl old site
-	- note inline formatting
-	- note gen style
-	- cal evt
+- dl, copy old site
+	- save inline fmt
+	- copy style
 - plan mk generalizable & easy to edit
 - pandoc filter
 	- exec, member page
 	- also gen top & bot navs from md
 - better org: home, join, linktree...
+	- reg info, tourn info
 - css
 	- nav bars
 		- site-header position absolute
@@ -34,6 +28,7 @@
 - doc
 
 ## todo later
+- ask past vpi abt strange subdomains
 - combine old cal
 - heading anchor link
 	- clean up md output: heading id
