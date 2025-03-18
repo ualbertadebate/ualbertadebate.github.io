@@ -189,7 +189,7 @@ Make sure we're inclusive to all our members, and give everyone the best semeste
 
 ## Novice Member-at-Large
 ### Océanne Kahanyshyn-Fontaine (She/Elle)
-![](océanne.jpg)
+![](oceanne.jpg)
 
 ### What is your program and year?
 Native Studies, 2nd year
