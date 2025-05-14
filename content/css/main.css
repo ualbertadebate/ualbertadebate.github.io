@@ -16,7 +16,7 @@ i, em {
 }
 /* Set page to full height */
 html, body {
-	height: 100%;
+	/* height: 100%; */
 }
 
 /**** MAIN ****/
