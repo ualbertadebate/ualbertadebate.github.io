@@ -20,11 +20,12 @@ article summary {
 	list-style: none;
 }
 article summary h2::before {
-	content: "\23F5 ";
+	content: "\25B8";
 	font-family: monospace;
+	margin-right: 5px;
 }
 article details[open] > summary h2::before {
-	content: "\23F7 ";
+	content: "\25BE";
 }
 </style>
 
