@@ -209,14 +209,21 @@ I've played violin for 12 years
 "use strict"
 const $ = document.querySelector.bind(document)
 const $$ = (sel) => [...document.querySelectorAll(sel)]
+const $create = (tag, ...props) => Object.assign(document.createElement(tag), ...props)
 Element.prototype.$ = Element.prototype.querySelector
 $$("article > .level2").forEach(($sec) => {
 	$sec.innerHTML = "<details>" + $sec.innerHTML + "</details>"
 	const [$det] = $sec.children
-	const $sum = document.createElement("summary")
+	const $sum = $create("summary")
+	const $h2 = $det.$("h2")
+	const $h3 = $det.$("h3")
+	;[$h2.textContent, $h3.textContent] = [$h3.textContent, $h2.textContent]
+	const [, name, pro] = $h2.textContent.match(/(.*) (\([^)]+\))$/)
+	$h2.textContent = name
+	const $p = $create("p", {textContent: pro})
 	const $img = Object.assign($det.$("img"), {width: 300, height: 400})
-	$sum.prepend($det.$("h2"), $det.$("h3"))
-	$det.prepend($sum)
+	$sum.prepend($h2, $h3)
+	$det.prepend($sum, $p)
 	$sec.prepend($img.parentElement)
 })
 })();
