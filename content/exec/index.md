@@ -13,12 +13,11 @@ article section.level2 {
 article h2 {
 	margin-top: 0;
 }
-article summary::marker {
-	content: "";
-	display: none;
-}
-section summary img {
+article h2 > :first-child > img {
 	object-fit: cover;
+}
+article summary {
+	list-style: none;
 }
 article summary h2::before {
 	content: "\23F5 ";
@@ -26,13 +25,6 @@ article summary h2::before {
 }
 article details[open] > summary h2::before {
 	content: "\23F7 ";
-}
-article summary {
-	display: flex;
-	flex-direction: column;
-}
-article summary p {
-	order: -1;
 }
 </style>
 
@@ -210,11 +202,12 @@ const $$ = (sel) => [...document.querySelectorAll(sel)]
 Element.prototype.$ = Element.prototype.querySelector
 $$("article > .level2").forEach(($sec) => {
 	$sec.innerHTML = "<details>" + $sec.innerHTML + "</details>"
-	;[$sec] = $sec.children
+	const [$det] = $sec.children
 	const $sum = document.createElement("summary")
-	const $img = Object.assign($sec.$("img"), {width: 300, height: 400})
-	$sum.prepend($sec.$("h2"), $sec.$("h3"), $img.parentElement)
-	$sec.prepend($sum)
+	const $img = Object.assign($det.$("img"), {width: 300, height: 400})
+	$sum.prepend($det.$("h2"), $det.$("h3"))
+	$det.prepend($sum)
+	$sec.prepend($img.parentElement)
 })
 })();
 </script>
