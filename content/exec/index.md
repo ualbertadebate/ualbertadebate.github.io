@@ -10,11 +10,11 @@ article {
 article section.level2 {
 	width: 300px;
 }
+article section.level2 > :first-child > img {
+	object-fit: cover;
+}
 article h2 {
 	margin-top: 0;
-}
-article h2 > :first-child > img {
-	object-fit: cover;
 }
 article summary {
 	list-style: none;
