@@ -27,6 +27,15 @@ article summary h2::before {
 article details[open] > summary h2::before {
 	content: "\25BE";
 }
+/* animations */
+article summary h2::before {
+	display: inline-block;
+	transition: transform 0.1s;
+}
+article details[open] > summary h2::before {
+	content: "\25B8";
+	transform: rotate(90deg) translate(2px, -1px);
+}
 </style>
 
 ## President
