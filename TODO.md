@@ -8,6 +8,7 @@
 	- also gen top & bot navs from md
 - better org: home, join, linktree...
 	- reg info, tourn info
+	- equity, resources
 - css
 	- exec utf caret not disp when no font support, eg on ph
 	- nav bars
