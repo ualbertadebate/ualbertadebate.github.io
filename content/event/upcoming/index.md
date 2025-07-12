@@ -6,4 +6,4 @@ iframe {
 	width: 100%;
 }
 </style>
-<iframe src="https://calendar.google.com/calendar/embed?src=c_f2707992a11f150000495c072d2ee6f0fca7bd7903949136dd47e48446297db8%40group.calendar.google.com&ctz=America%2FEdmonton&wkst=2"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=c_af2be064ca6ca5db8aef34f9f9498c12c9bf8f033454788009318a5547b6232d%40group.calendar.google.com&ctz=America%2FEdmonton&wkst=2"></iframe>
