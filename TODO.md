@@ -3,7 +3,9 @@
 	- save inline fmt
 	- copy style
 - plan mk generalizable & easy to edit
-- pandoc filter
+- markdown to html
+	- try: pandoc filter, hugo, other ssg
+		- wr own parser
 	- exec, member page
 	- also gen top & bot navs from md
 - better org: home, join, linktree...
@@ -23,7 +25,7 @@
 		- <https://stackoverflow.com/q/68626280>
 		- <https://stackoverflow.com/q/14775195>
 		- <https://www.w3schools.com/css/css_rwd_viewport.asp>
-	- ask fariha abt logo
+	- ask fariha abt logo, strange subdomains, dns, unlinked exec pages, mailchimp, debate@uab email
 	- mk pretty
 		- <https://stackoverflow.com/q/34331102>
 	- clean up md output: only grp h2 into section
