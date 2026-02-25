@@ -1,10 +1,6 @@
 #!/bin/sh
-
 alias p='printf %s\\n'
-fatal() {
-	>&2 p "$0: $1"
-	exit 1
-}
+fail() { >&2 p "$0: $1"; exit 1; }
 main() {
 	verif_fnames
 	rm_outdated
@@ -13,7 +9,7 @@ main() {
 readonly PAT_VERIF_FNAME='(.*/)?[0-9a-z_][0-9a-z_.-]*/?'
 verif_fnames() {
 	! find content/ | grep -Evx "$PAT_VERIF_FNAME" ||
-		fatal 'invalid file names found'
+		fail 'invalid file names found'
 }
 rm_outdated() {
 	find content/ -type f -name \*.html -exec sh -c '
