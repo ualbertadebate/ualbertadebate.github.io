@@ -1,6 +1,7 @@
 https://ualbertadebate.wixsite.com/uads
 https://ualbertadebate.wixsite.com/uads/about
 https://ualbertadebate.wixsite.com/uads/products
+https://ualbertadebate.wixsite.com/uads/blank-page
 https://web.archive.org/web/*/https://ualbertadebate.wixsite.com/*
 https://web.archive.org/web/*/https://sites.ualberta.ca/~debate/ # no other paths in wayback or archive.is
 https://web.archive.org/web/*/https://www.ualberta.ca/~debate/*
